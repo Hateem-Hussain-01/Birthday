@@ -1,0 +1,46 @@
+body {
+    background-color: #3cba54; /* Green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: #3cba54; }
+    50% { background-color: #f6d04f; } /* Yellow */
+    100% { background-color: #3cba54; }
+}
+
+.animated-card {
+    background: rgba(255, 255, 255, 0.9); /* White with transparency */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.animated-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.btn {
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
